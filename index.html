@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <link rel='stylesheet' href='source/css/style.css'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AZS</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class='header'>
+         <div class='container'>
+            <div class="header__inner">
+               <div class="logo header__logo">
+                  AZS.PAY
+               </div>
+               <div class="header__text">
+                  Бонусные баллы <br>
+                  для всех АЗС
+               </div>
+               <nav class='header__nav'>
+                  <a href='#about' class='header__link'>О нас</a>
+                  <a href='#buy' class='header__link'>Заказать</a>
+                  <a href='#reviews' class='header__link'>Отзывы</a>
+                  <a href='#contacts' class='header__link'>Контакты</a>
+               </nav>
+               <div class="burger">
+                  <span></span>
+               </div>
+            </div>
+         </div> <!-- /container -->
+      </header> <!-- /header -->
+
+      <div class='intro'>
+         <div class='container'>
+            <div class="intro__inner">
+               <h1 class="title intro__title">Надоело <span class="red"> тратить много </span>денег на топливо ?</h1>
+
+               <p class="intro__subtitle">
+                  Приобретайте бонусные баллы прямо сейчас и сэкономьте до 40% на топливе и сопутствующих товаров сетей АЗС
+               </p>
+
+               <a class="btn intro__btn">Заказать баллы</a>
+
+               <ul class="intro__list">
+                  <li>Экономия до -40%</li>
+                  <li>24\7 без задержек</li>
+                  <li>Все виды АЗС</li>
+                  <li>Круглосуточная поддержка</li>
+               </ul>
+            </div>
+         </div> <!-- /container -->
+      </div> <!-- /intro -->
+
+       <div class='about'>
+          <a name="about"></a>
+          <div class='container'>
+             <h2 class="title about__title">Кто мы такие</h2>
+
+             <p class="about__description">
+               Мы первый бонусный брокер бонусных баллов крупных сетей АЗС - Мы рочно закрепились на рынке с 2017 года. У нас хорошая динамика развития и с нами выгодно сотрудничать. Команда высококвалифицированных профессионалов, которые четко выстраивают логические процессы введения бизнеса с длительным взаимовыгодным сотрудничеством с транспортными компаниями и прочими партнерами, для получения бонусных баллов!
+             </p>
+
+             <div class='about-list'>
+                <div class='about__item'>
+                   <span class="about__icon red ico-card"></span>
+
+                   <span class="about__name red">Оплата</span>
+
+                   <p class="about__text">
+                     Автоматизированная система приобретения бонусных баллов 24/7 без задержек 
+                     в режиме онлайн.
+                   </p>
+                   
+                </div>
+                <div class='about__item'>
+                   <span class="about__icon red ico-chek"></span>
+
+                   <span class="about__name red">Гарантия</span>
+
+                   <p class="about__text">
+                     Все платежи покупателя застрахованы вашим банком 
+                     и отслеживаются службой безопасности.
+                   </p>
+
+                </div>
+                <div class='about__item'>
+                   <span class="about__icon red ico-dollar"></span>
+
+                   <span class="about__name red">Возврат средств</span>
+
+                   <p class="about__text">
+                     Возврат средств осуществляется
+                     без задержек по телефону горячей
+                     линии, либо по чек-квитанции
+                     вашего банка.
+                   </p>
+
+                </div>
+             </div>
+          </div> <!-- /container -->
+       </div> <!-- /about -->
+
+       <div class='buy'>
+          <a name='buy'></a>
+          <div class='container'>
+             <h2 class='title buy__title'>Покупка бонусов для АЗС</h2>
+             
+             <form data-promo='false' class="bonus" action="">
+                <div class="bonus__inner">
+                  <div class="bonus__select">
+                     <select class="" name="" id="">       
+                        <option selected disabled value="">Выберите ваш азс</option>
+                        <option value="">азс1</option>
+                        <option value="">азс2</option>
+                        <option value="">азс3</option>
+                     </select>
+                  </div>
+                  
+                  <div class="bonus__input _1">
+                     <input placeholder="Номер бонусной карты" class="" type="text">
+                  </div>
+
+                  <div class="bonus__range_wrapper">
+                    <label for="quantity-bonus">Количеством бонусов: <span class="red" class="" id="get-quantity-bonus">1400</span> <span class="red">бонусов</span></label>
+                    <p>Максимально: <span id="bonus-max" class="black">14 000 бонусов</span> </p>
+
+
+                    <input step="200" value="1" data-value="" min="1400" max="14000" class="bonus__range" id="quantity-bonus" type="range">
+
+                 </div>
+  
+                 <div class="bonus__text">
+                    <p>Есть промокод на скидку?</p>
+
+                    <div class="bonus__result">
+                       итого:
+                     <span class="red bonus__result__value" id="get-quantity-rub">345645</span> 
+                       <span class="red">рублей</span> 
+                    </div>
+                    
+                 </div>
+
+                 <div class="bonus__input _2">
+                  <input class="" type="text" placeholder="Введите промо-код" name="" id="promo">
+                 </div>
+
+                 <div class="bonus__input _3">
+                  <input class="" type="text" placeholder="Номер телеофна" name="" id="">
+                </div>
+                  
+
+                </div>
+
+                <button class="bonus__btn btn">Заказать баллы</button>
+             </form>
+          </div> <!-- /container -->
+       </div> <!-- /buy -->
+
+       <div class='questions'>
+          
+          <div class='container'>
+             <h2 class='questions__title title'>Часто задаваемые вопросы</h2> 
+
+             <div class="questions-tab tabs">
+                <div class="tabs__item">
+                   <div class="tabs__header">
+                     <span class="tab__arrrow ico-arr"></span>
+                   <div class="tabs__title">С какими АЗС Вы работаете?</div>
+
+                   </div>
+                  
+                   <div class="tabs__content">Газпромнефть, Роснефть, Лукойл</div>
+                </div>
+
+                <div class="tabs__item">
+                   <div class="tabs__header">
+                     <span class="tab__arrrow ico-arr"></span>
+                     <div class="tabs__title">Какая карта нужна для покупки?</div>
+                   </div>
+                  
+                  <div class="tabs__content">Обычная бонусная карта, на которую зачисляются бонусы при обычной заправке</div>
+               </div>
+
+               <div class="tabs__item">
+                  <div class="tabs__header">
+                     <span class="tab__arrrow ico-arr"></span>
+                     <div class="tabs__title">Где взять бонусную карту? </div>
+                  </div>
+                  
+                  <div class="tabs__content">Бонусную карту можете приобрести на любой АЗС вашего города</div>
+               </div>
+
+               <div class="tabs__item">
+                  <div class="tabs__header">
+                     <span class="tab__arrrow ico-arr"></span>
+                     <div class="tabs__title">Сколько можно приобретать бонусов через Вас? </div>   
+                  </div>
+                 
+                  <div class="tabs__content">Минимальная сумма для перевода 1500 бонусов. Максимальная разовая сумма для перевода 20000 бонусов</div>
+               </div>
+
+               <div class="tabs__item">
+                  <div class="tabs__header">
+                     <span class="tab__arrrow ico-arr"></span>
+                     <div class="tabs__title">Как долго идет зачисление бонусов после покупки?  </div>
+   
+                  </div>
+                 
+                  <div class="tabs__content">Зачисление происходит в течении часа, в очень редких случаях возможно ожидание до двух часов</div>
+               </div>
+
+               <div class="tabs__item">
+                  <div class="tabs__header">
+                     <span class="tab__arrrow ico-arr"></span>
+                     <div class="tabs__title">Бонусы сгораемые? </div>
+                  </div>
+                  
+                  <div class="tabs__content">Да, бонусные баллы сгорают через 30 суток после зачисления.</div>
+               </div>
+
+               <div class="tabs__item">
+                  <div class="tabs__header">
+                     <span class="tab__arrrow ico-arr"></span>
+                     <div class="tabs__title">На АЗС могут спросить почему так много бонусов и откуда они? </div>
+                  </div>
+                  
+                  <div class="tabs__content">Нет, им нет дела откуда у вас и сколько бонусов, ежедневно через них проходят тысячи карт, с гораздо большими суммами. Те же дальнобойщики, тяжелая техника, таксисты, они получают очень много бонусов ежемесячно</div>
+               </div>
+   
+               <div class="tabs__item">
+                  <div class="tabs__header">
+                     <span class="tab__arrrow ico-arr"></span>
+                     <div class="tabs__title">Что можно покупать на АЗС за бонусный баланс? </div>
+                  </div>
+                  
+                  <div class="tabs__content">Все что продается на АЗС: любое топливо, еда, напитки, сигареты и т.д.</div>
+               </div>
+   
+               <div class="tabs__item">
+                  <div class="tabs__header">
+                     <span class="tab__arrrow ico-arr"></span>
+                     <div class="tabs__title">Это работает по всей России?</div>
+                  </div>
+                  
+                  <div class="tabs__content">Да, если в вашем городе есть АЗС из списка выше, то вы можете воспользоваться нашим предложением</div>
+               </div>
+   
+               <div class="tabs__item">
+                  <div class="tabs__header">
+                     <span class="tab__arrrow ico-arr"></span>
+                     <div class="tabs__title">На моей бонусной карте несколько номеров, какой именно нужен?</div>
+                  </div>
+                  
+                  <div class="tabs__content">Для ГПН и Лукойл номер с лицевой стороны карты, для Роснефть номер с обратной стороны карты, расположенный под штрихкодом.</div>
+               </div>
+             </div>
+
+             
+          </div> <!-- /container -->
+       </div> <!-- /questions -->
+
+       <div class='reviews'>
+          <a name="reviews"></a>
+          <div class='container'>
+             <h2 class='reviews__title title'>Отзывы довольных клиентов</h2>
+
+             <div class="slider-wrapper">
+             <div class="reviews-slider-btn _prev ico-arr"></div>
+             <div class="reviews-slider-btn _next ico-arr"></div>
+
+             <div class="reviews-slider">
+                
+                <div class="reviews-track">
+ 
+                  <div class="reviews__slide">
+                     <h3 class="reviews__price">Покупка 4 500 баллов</h3>
+
+                     <p class="reviews__txt">
+                        <span class="ico-user"> </span><span class="reviews__name"></span> Виктор, г. Москва</span>
+                     </p>
+                     <p class="reviews__txt">
+                        <span class="ico-car"></span><span class="reviews__car">Tayota Camry 2014</span>
+                     </p>
+                     <p class="reviews__desc">
+                        Решил приобрести 100 баллов у «название компании» просто ради для эксперимента, 
+                        а в итоге получил огромную выгоду. Ведь теперь я сэкономил больше 3 000 тыс руб на ежемесячной покупке топлива! (Я водитель, 
+                        и поэтому мне постоянно приходится заправляться большим количеством топлива для длительных поездок) В общем, всем тем, кто также, как и я, много ездит на машине, однозначно рекомендую купить хотя бы несколько баллов для экономии денег на азс.
+                     </p>
+                  </div>
+                  <div class="reviews__slide">
+                     <h3 class="reviews__price">Покупка 4 500 баллов</h3>
+
+                     <p class="reviews__txt">
+                        <span class="ico-user"> </span><span class="reviews__name"></span> Виктор, г. Москва</span>
+                     </p>
+                     <p class="reviews__txt">
+                        <span class="ico-car"></span><span class="reviews__car">Tayota Camry 2014</span>
+                     </p>
+                     <p class="reviews__desc">
+                        Решил приобрести 100 баллов у «название компании» просто ради для эксперимента, 
+                        а в итоге получил огромную выгоду. Ведь теперь я сэкономил больше 3 000 тыс руб на ежемесячной покупке топлива! (Я водитель, 
+                        и поэтому мне постоянно приходится заправляться большим количеством топлива для длительных поездок) В общем, всем тем, кто также, как и я, много ездит на машине, однозначно рекомендую купить хотя бы несколько баллов для экономии денег на азс.
+                     </p>
+                  </div>
+                  <div class="reviews__slide">
+                     <h3 class="reviews__price">Покупка 4 500 баллов</h3>
+
+                     <p class="reviews__txt">
+                        <span class="ico-user"> </span><span class="reviews__name"></span> Виктор, г. Москва</span>
+                     </p>
+                     <p class="reviews__txt">
+                        <span class="ico-car"></span><span class="reviews__car">Tayota Camry 2014</span>
+                     </p>
+                     <p class="reviews__desc">
+                        Решил приобрести 100 баллов у «название компании» просто ради для эксперимента, 
+                        а в итоге получил огромную выгоду. Ведь теперь я сэкономил больше 3 000 тыс руб на ежемесячной покупке топлива! (Я водитель, 
+                        и поэтому мне постоянно приходится заправляться большим количеством топлива для длительных поездок) В общем, всем тем, кто также, как и я, много ездит на машине, однозначно рекомендую купить хотя бы несколько баллов для экономии денег на азс.
+                     </p>
+                  </div>
+                  <div class="reviews__slide">
+                     <h3 class="reviews__price">Покупка 4 500 баллов</h3>
+
+                     <p class="reviews__txt">
+                        <span class="ico-user"> </span><span class="reviews__name"></span> Виктор, г. Москва</span>
+                     </p>
+                     <p class="reviews__txt">
+                        <span class="ico-car"></span><span class="reviews__car">Tayota Camry 2014</span>
+                     </p>
+                     <p class="reviews__desc">
+                        Решил приобрести 100 баллов у «название компании» просто ради для эксперимента, 
+                        а в итоге получил огромную выгоду. Ведь теперь я сэкономил больше 3 000 тыс руб на ежемесячной покупке топлива! (Я водитель, 
+                        и поэтому мне постоянно приходится заправляться большим количеством топлива для длительных поездок) В общем, всем тем, кто также, как и я, много ездит на машине, однозначно рекомендую купить хотя бы несколько баллов для экономии денег на азс.
+                     </p>
+                  </div>
+                  <div class="reviews__slide">
+                     <h3 class="reviews__price">Покупка 4 500 баллов</h3>
+
+                     <p class="reviews__txt">
+                        <span class="ico-user"> </span><span class="reviews__name"></span> Виктор, г. Москва</span>
+                     </p>
+                     <p class="reviews__txt">
+                        <span class="ico-car"></span><span class="reviews__car">Tayota Camry 2014</span>
+                     </p>
+                     <p class="reviews__desc">
+                        Решил приобрести 100 баллов у «название компании» просто ради для эксперимента, 
+                        а в итоге получил огромную выгоду. Ведь теперь я сэкономил больше 3 000 тыс руб на ежемесячной покупке топлива! (Я водитель, 
+                        и поэтому мне постоянно приходится заправляться большим количеством топлива для длительных поездок) В общем, всем тем, кто также, как и я, много ездит на машине, однозначно рекомендую купить хотя бы несколько баллов для экономии денег на азс.
+                     </p>
+                  </div>
+               </div>
+             </div>
+            </div>
+          </div> <!-- /container -->
+       </div> <!-- /reviews -->
+
+       <div class='info'>
+             <div class="info__inner">
+               <div class="map">
+                  <iframe src="">
+
+                  </iframe>
+               </div>
+             <div class="contacts">
+                <a name="contacts"></a>
+                <h2 class='contact__title title'>Контакты</h2> 
+
+                <ul class="contact__list">
+                   <li>
+                      <span>Наш адрес:</span>
+
+                      <p>г. Москва 119049, ул. Шаболовка 23 офис 6</p>
+                   </li>
+                   <li>
+                     <span>Телефон:</span>
+
+                     <p>+7(495) 777-88-99</p>
+                  </li>
+                  <li>
+                     <span>ИНН: / КПП</span>
+
+                     <p>5038142363 / 505001001</p>
+                  </li>
+                  <li>
+                     <span>Номер расчетного номера:</span>
+
+                     <p>40702810901300016940</p>
+                  </li>
+                  <li>
+                     <span>БИК:</span>
+
+                     <p>044525593</p>
+                  </li>
+                </ul>
+
+                <div class="contact__copy">
+                  &copy; AZS.PAY 2017-2021
+
+                  <a href="#">Политика конфиденциальности</a>
+                </div> 
+             </div>
+             
+          </div> <!-- /container -->
+       </div> <!-- /contacts -->
+   </div>
+</body>
+<script src='source/js/main.js'></script>
+</html>
