@@ -706,6 +706,7 @@ body {
 }
 
 .about__item {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
